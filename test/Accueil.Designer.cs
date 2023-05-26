@@ -33,6 +33,8 @@
             this.buttonPlayTime = new System.Windows.Forms.Button();
             this.BottomPage = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.title__1 = new System.Windows.Forms.Label();
+            this.title__2 = new System.Windows.Forms.Label();
             this.BottomPage.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,12 +46,12 @@
             this.buttonLogAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLogAdmin.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonLogAdmin.Location = new System.Drawing.Point(513, 15);
-            this.buttonLogAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogAdmin.Location = new System.Drawing.Point(476, 15);
+            this.buttonLogAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogAdmin.Name = "buttonLogAdmin";
             this.buttonLogAdmin.Size = new System.Drawing.Size(87, 38);
             this.buttonLogAdmin.TabIndex = 0;
-            this.buttonLogAdmin.Text = "Login";
+            this.buttonLogAdmin.Text = "Admin";
             this.buttonLogAdmin.UseVisualStyleBackColor = false;
             this.buttonLogAdmin.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -60,13 +62,14 @@
             this.buttonLogUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogUsers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLogUsers.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonLogUsers.Location = new System.Drawing.Point(620, 14);
-            this.buttonLogUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogUsers.Location = new System.Drawing.Point(577, 14);
+            this.buttonLogUsers.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogUsers.Name = "buttonLogUsers";
             this.buttonLogUsers.Size = new System.Drawing.Size(77, 39);
             this.buttonLogUsers.TabIndex = 1;
-            this.buttonLogUsers.Text = "Users";
+            this.buttonLogUsers.Text = "Vote";
             this.buttonLogUsers.UseVisualStyleBackColor = false;
+            this.buttonLogUsers.Click += new System.EventHandler(this.buttonLogUsers_Click);
             // 
             // buttonPlayTime
             // 
@@ -74,7 +77,7 @@
             this.buttonPlayTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPlayTime.ForeColor = System.Drawing.Color.DimGray;
             this.buttonPlayTime.Location = new System.Drawing.Point(289, 196);
-            this.buttonPlayTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPlayTime.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPlayTime.Name = "buttonPlayTime";
             this.buttonPlayTime.Size = new System.Drawing.Size(131, 32);
             this.buttonPlayTime.TabIndex = 2;
@@ -87,10 +90,12 @@
             this.BottomPage.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.BottomPage.AutoScroll = true;
             this.BottomPage.BackColor = System.Drawing.SystemColors.GrayText;
+            this.BottomPage.Controls.Add(this.title__2);
+            this.BottomPage.Controls.Add(this.title__1);
             this.BottomPage.Controls.Add(this.buttonLogUsers);
             this.BottomPage.Controls.Add(this.buttonLogAdmin);
             this.BottomPage.Location = new System.Drawing.Point(-3, 0);
-            this.BottomPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BottomPage.Margin = new System.Windows.Forms.Padding(4);
             this.BottomPage.Name = "BottomPage";
             this.BottomPage.Size = new System.Drawing.Size(715, 68);
             this.BottomPage.TabIndex = 3;
@@ -108,6 +113,31 @@
             this.label1.TabIndex = 4;
             this.label1.Text = " Votes Stats Now";
             // 
+            // title__1
+            // 
+            this.title__1.AutoSize = true;
+            this.title__1.BackColor = System.Drawing.Color.Transparent;
+            this.title__1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title__1.ForeColor = System.Drawing.Color.Tomato;
+            this.title__1.Location = new System.Drawing.Point(9, 8);
+            this.title__1.Name = "title__1";
+            this.title__1.Size = new System.Drawing.Size(157, 52);
+            this.title__1.TabIndex = 5;
+            this.title__1.Text = "Digital";
+            this.title__1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // title__2
+            // 
+            this.title__2.AutoSize = true;
+            this.title__2.BackColor = System.Drawing.Color.Transparent;
+            this.title__2.Font = new System.Drawing.Font("Microsoft YaHei Light", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title__2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.title__2.Location = new System.Drawing.Point(158, 4);
+            this.title__2.Name = "title__2";
+            this.title__2.Size = new System.Drawing.Size(119, 57);
+            this.title__2.TabIndex = 5;
+            this.title__2.Text = "Vote";
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -120,10 +150,11 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VoteApps";
+            this.Text = "DigitalVote";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.BottomPage.ResumeLayout(false);
+            this.BottomPage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +167,8 @@
         private System.Windows.Forms.Button buttonPlayTime;
         private System.Windows.Forms.Panel BottomPage;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label title__2;
+        private System.Windows.Forms.Label title__1;
     }
 }
 
