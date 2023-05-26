@@ -1,6 +1,6 @@
 ﻿namespace test
 {
-    partial class LoginAdmin
+    partial class LoginVote
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // LoginAdmin
+            // LoginVote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "LoginAdmin";
-            this.Text = "LoginAdmin";
+            this.Name = "LoginVote";
+            this.Text = "LoginVote";
             this.ResumeLayout(false);
 
         }

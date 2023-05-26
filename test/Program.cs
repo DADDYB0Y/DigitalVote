@@ -14,9 +14,14 @@ namespace test
         [STAThread]
         static void Main()
         {
+            //Variables
+            int heures = 00;
+            int minutes = 00;
+            int secondes = 00;
+            int millisecondes = 00;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Accueil());
+            Application.Run(new Accueil(heures, minutes, secondes, millisecondes));
         }
     }
 }
