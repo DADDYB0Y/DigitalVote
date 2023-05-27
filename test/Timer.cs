@@ -17,16 +17,21 @@ namespace test
             InitializeComponent();
         }
 
-        private void Btn__Time_Click(object sender, EventArgs e)
+        public TimeSpan GetTimeSpan()
         {
             //Recuperer les valeurs entrées par l'utilisateur
             int heures = (int)numericUpDownHeure.Value;
             int minutes = (int)numericUpDownMinute.Value;
             int secondes = (int)numericUpDownSeconde.Value;
-            int millisecondes= (int)numericUpDownMilliseconde.Value;
-            //Creer une nouvelle instance de la page Accueil et y passer les valeurs en tant que parametres
-            Accueil homePage = new Accueil(heures, minutes, secondes, millisecondes);
-            homePage.Show();
+            int millisecondes = (int)numericUpDownMilliseconde.Value;
+            return new TimeSpan(0, heures, minutes, secondes, millisecondes);
+        }
+
+        private void Btn__Time_Click(object sender, EventArgs e)
+        {
+            //Valider le donnees entrees
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }

@@ -28,24 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonLogAdmin = new System.Windows.Forms.Button();
-            this.buttonLogUsers = new System.Windows.Forms.Button();
+            this.btn__Vote = new System.Windows.Forms.Button();
             this.buttonPlayTime = new System.Windows.Forms.Button();
             this.BottomPage = new System.Windows.Forms.Panel();
             this.title__2 = new System.Windows.Forms.Label();
             this.title__1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.LabelHeures = new System.Windows.Forms.Label();
-            this.LabelMinutes = new System.Windows.Forms.Label();
-            this.LabelSecondes = new System.Windows.Forms.Label();
-            this.LabelMillisecondes = new System.Windows.Forms.Label();
-            this.labelSeparation1 = new System.Windows.Forms.Label();
-            this.LabelSeparation2 = new System.Windows.Forms.Label();
-            this.LabelSeparation3 = new System.Windows.Forms.Label();
             this.roundCorneredProgressBar1 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
             this.roundCorneredProgressBar2 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
             this.roundCorneredProgressBar3 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
             this.roundCorneredProgressBar4 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
+            this.LabelTime = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.BottomPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar2)).BeginInit();
@@ -61,7 +57,7 @@
             this.buttonLogAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLogAdmin.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonLogAdmin.Location = new System.Drawing.Point(972, 14);
+            this.buttonLogAdmin.Location = new System.Drawing.Point(984, 14);
             this.buttonLogAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogAdmin.Name = "buttonLogAdmin";
             this.buttonLogAdmin.Size = new System.Drawing.Size(87, 38);
@@ -70,21 +66,21 @@
             this.buttonLogAdmin.UseVisualStyleBackColor = false;
             this.buttonLogAdmin.Click += new System.EventHandler(this.buttonLogAdmin_Click);
             // 
-            // buttonLogUsers
+            // btn__Vote
             // 
-            this.buttonLogUsers.AutoEllipsis = true;
-            this.buttonLogUsers.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonLogUsers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogUsers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonLogUsers.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonLogUsers.Location = new System.Drawing.Point(1077, 13);
-            this.buttonLogUsers.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonLogUsers.Name = "buttonLogUsers";
-            this.buttonLogUsers.Size = new System.Drawing.Size(77, 39);
-            this.buttonLogUsers.TabIndex = 1;
-            this.buttonLogUsers.Text = "Vote";
-            this.buttonLogUsers.UseVisualStyleBackColor = false;
-            this.buttonLogUsers.Click += new System.EventHandler(this.buttonVote_Click);
+            this.btn__Vote.AutoEllipsis = true;
+            this.btn__Vote.BackColor = System.Drawing.SystemColors.Control;
+            this.btn__Vote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn__Vote.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn__Vote.ForeColor = System.Drawing.Color.DimGray;
+            this.btn__Vote.Location = new System.Drawing.Point(1101, 14);
+            this.btn__Vote.Margin = new System.Windows.Forms.Padding(4);
+            this.btn__Vote.Name = "btn__Vote";
+            this.btn__Vote.Size = new System.Drawing.Size(77, 39);
+            this.btn__Vote.TabIndex = 1;
+            this.btn__Vote.Text = "Vote";
+            this.btn__Vote.UseVisualStyleBackColor = false;
+            this.btn__Vote.Click += new System.EventHandler(this.btn__Vote_Click);
             // 
             // buttonPlayTime
             // 
@@ -108,7 +104,7 @@
             this.BottomPage.BackColor = System.Drawing.SystemColors.GrayText;
             this.BottomPage.Controls.Add(this.title__2);
             this.BottomPage.Controls.Add(this.title__1);
-            this.BottomPage.Controls.Add(this.buttonLogUsers);
+            this.BottomPage.Controls.Add(this.btn__Vote);
             this.BottomPage.Controls.Add(this.buttonLogAdmin);
             this.BottomPage.Location = new System.Drawing.Point(-3, 0);
             this.BottomPage.Margin = new System.Windows.Forms.Padding(4);
@@ -147,100 +143,13 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Location = new System.Drawing.Point(471, 291);
+            this.label1.Location = new System.Drawing.Point(471, 295);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(323, 48);
             this.label1.TabIndex = 4;
             this.label1.Text = " Votes Stats Now";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // LabelHeures
-            // 
-            this.LabelHeures.AutoSize = true;
-            this.LabelHeures.BackColor = System.Drawing.Color.Transparent;
-            this.LabelHeures.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelHeures.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LabelHeures.Location = new System.Drawing.Point(327, 131);
-            this.LabelHeures.Name = "LabelHeures";
-            this.LabelHeures.Size = new System.Drawing.Size(127, 91);
-            this.LabelHeures.TabIndex = 9;
-            this.LabelHeures.Text = "00";
-            this.LabelHeures.Click += new System.EventHandler(this.LabelHeures_Click);
-            // 
-            // LabelMinutes
-            // 
-            this.LabelMinutes.AutoSize = true;
-            this.LabelMinutes.BackColor = System.Drawing.Color.Transparent;
-            this.LabelMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelMinutes.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LabelMinutes.Location = new System.Drawing.Point(480, 131);
-            this.LabelMinutes.Name = "LabelMinutes";
-            this.LabelMinutes.Size = new System.Drawing.Size(127, 91);
-            this.LabelMinutes.TabIndex = 10;
-            this.LabelMinutes.Text = "00";
-            // 
-            // LabelSecondes
-            // 
-            this.LabelSecondes.AutoSize = true;
-            this.LabelSecondes.BackColor = System.Drawing.Color.Transparent;
-            this.LabelSecondes.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSecondes.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LabelSecondes.Location = new System.Drawing.Point(649, 131);
-            this.LabelSecondes.Name = "LabelSecondes";
-            this.LabelSecondes.Size = new System.Drawing.Size(127, 91);
-            this.LabelSecondes.TabIndex = 11;
-            this.LabelSecondes.Text = "00";
-            this.LabelSecondes.Click += new System.EventHandler(this.LabelSeconde_Click);
-            // 
-            // LabelMillisecondes
-            // 
-            this.LabelMillisecondes.AutoSize = true;
-            this.LabelMillisecondes.BackColor = System.Drawing.Color.Transparent;
-            this.LabelMillisecondes.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelMillisecondes.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LabelMillisecondes.Location = new System.Drawing.Point(822, 131);
-            this.LabelMillisecondes.Name = "LabelMillisecondes";
-            this.LabelMillisecondes.Size = new System.Drawing.Size(127, 91);
-            this.LabelMillisecondes.TabIndex = 12;
-            this.LabelMillisecondes.Text = "00";
-            // 
-            // labelSeparation1
-            // 
-            this.labelSeparation1.AutoSize = true;
-            this.labelSeparation1.BackColor = System.Drawing.Color.Transparent;
-            this.labelSeparation1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSeparation1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.labelSeparation1.Location = new System.Drawing.Point(435, 131);
-            this.labelSeparation1.Name = "labelSeparation1";
-            this.labelSeparation1.Size = new System.Drawing.Size(61, 91);
-            this.labelSeparation1.TabIndex = 13;
-            this.labelSeparation1.Text = ":";
-            // 
-            // LabelSeparation2
-            // 
-            this.LabelSeparation2.AutoSize = true;
-            this.LabelSeparation2.BackColor = System.Drawing.Color.Transparent;
-            this.LabelSeparation2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSeparation2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LabelSeparation2.Location = new System.Drawing.Point(593, 131);
-            this.LabelSeparation2.Name = "LabelSeparation2";
-            this.LabelSeparation2.Size = new System.Drawing.Size(61, 91);
-            this.LabelSeparation2.TabIndex = 14;
-            this.LabelSeparation2.Text = ":";
-            // 
-            // LabelSeparation3
-            // 
-            this.LabelSeparation3.AutoSize = true;
-            this.LabelSeparation3.BackColor = System.Drawing.Color.Transparent;
-            this.LabelSeparation3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSeparation3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LabelSeparation3.Location = new System.Drawing.Point(771, 131);
-            this.LabelSeparation3.Name = "LabelSeparation3";
-            this.LabelSeparation3.Size = new System.Drawing.Size(61, 91);
-            this.LabelSeparation3.TabIndex = 15;
-            this.LabelSeparation3.Text = ":";
-            this.LabelSeparation3.Click += new System.EventHandler(this.LabelSeparation3_Click);
             // 
             // roundCorneredProgressBar1
             // 
@@ -298,22 +207,32 @@
             this.roundCorneredProgressBar4.TabStop = false;
             this.roundCorneredProgressBar4.Value = 0;
             // 
+            // LabelTime
+            // 
+            this.LabelTime.AutoSize = true;
+            this.LabelTime.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTime.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LabelTime.Location = new System.Drawing.Point(348, 128);
+            this.LabelTime.Name = "LabelTime";
+            this.LabelTime.Size = new System.Drawing.Size(583, 91);
+            this.LabelTime.TabIndex = 20;
+            this.LabelTime.Text = "00 : 00 : 00 : 00";
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.LabelTime);
             this.Controls.Add(this.roundCorneredProgressBar4);
             this.Controls.Add(this.roundCorneredProgressBar3);
             this.Controls.Add(this.roundCorneredProgressBar2);
             this.Controls.Add(this.roundCorneredProgressBar1);
-            this.Controls.Add(this.LabelSeparation3);
-            this.Controls.Add(this.LabelSeparation2);
-            this.Controls.Add(this.labelSeparation1);
-            this.Controls.Add(this.LabelMillisecondes);
-            this.Controls.Add(this.LabelSecondes);
-            this.Controls.Add(this.LabelMinutes);
-            this.Controls.Add(this.LabelHeures);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BottomPage);
             this.Controls.Add(this.buttonPlayTime);
@@ -338,23 +257,18 @@
         #endregion
 
         private System.Windows.Forms.Button buttonLogAdmin;
-        private System.Windows.Forms.Button buttonLogUsers;
+        private System.Windows.Forms.Button btn__Vote;
         private System.Windows.Forms.Button buttonPlayTime;
         private System.Windows.Forms.Panel BottomPage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label title__2;
         private System.Windows.Forms.Label title__1;
-        private System.Windows.Forms.Label LabelHeures;
-        private System.Windows.Forms.Label LabelMinutes;
-        private System.Windows.Forms.Label LabelSecondes;
-        private System.Windows.Forms.Label LabelMillisecondes;
-        private System.Windows.Forms.Label labelSeparation1;
-        private System.Windows.Forms.Label LabelSeparation2;
-        private System.Windows.Forms.Label LabelSeparation3;
         private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar1;
         private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar2;
         private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar3;
         private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar4;
+        private System.Windows.Forms.Label LabelTime;
+        private System.Windows.Forms.Timer timer;
     }
 }
 

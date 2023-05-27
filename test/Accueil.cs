@@ -13,25 +13,43 @@ namespace test
 {
     public partial class Accueil : Form
     {
-        private int heures;
-        private int minutes;
-        private int secondes;
-        private int millisecondes;
+      private Timer time;
+        private TimeSpan timeEcouler;
 
-        public Accueil(int heures, int minutes, int secondes, int millisecondes)
+
+        public Accueil()
         {
             //Initialisation
             InitializeComponent();
-            this.heures = heures;
-            this.minutes = minutes;
-            this.secondes = secondes;
-            this.millisecondes = millisecondes;
-            //Affichages
-            LabelHeures.Text = heures.ToString();
-            LabelMinutes.Text = minutes.ToString();
-            LabelSecondes.Text = secondes.ToString();
-            LabelMillisecondes.Text = millisecondes.ToString();
+            InitializeTimer();   
+        }
 
+        private void InitializeTimer()
+        {
+            //Initialisation du temps
+            time = new Timer();
+            timer.Interval = 100;
+            timer.Tick += timer_Tick;
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            //Intervall du temps a afficher
+            timeEcouler = timeEcouler.Subtract(TimeSpan.FromMilliseconds(timer.Interval));
+            UpdateTimeLabel();
+            if (timeEcouler <= TimeSpan.Zero)
+            {
+                timer.Stop();
+                MessageBox.Show("Le Vote est terminé!");
+                //Griser le bouton voter
+                btn__Vote.Enabled = false;
+            }
+        }
+
+        private void UpdateTimeLabel()
+        {
+            //Affichage du chrono
+            LabelTime.Text = timeEcouler.ToString(@"hh\:mm\:ss\.ff");
         }
 
         private void buttonLogAdmin_Click(object sender, EventArgs e)
@@ -42,7 +60,7 @@ namespace test
             //
         }
 
-        private void buttonVote_Click(object sender, EventArgs e)
+        private void btn__Vote_Click(object sender, EventArgs e)
         {
             //Ouvrir la fenetre Timer
             LoginVote loginVote = new LoginVote();
@@ -50,22 +68,7 @@ namespace test
             //
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
@@ -73,14 +76,15 @@ namespace test
         private void buttonPlayTime_Click(object sender, EventArgs e)
         {
             //Ouvrir la fenetre Timer
-            Timer timerform = new Timer();
-            timerform.Show();
-            //
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            using (Timer timerform = new Timer())
+            {
+                if (timerform.ShowDialog() == DialogResult.OK)
+                {
+                    timeEcouler = timerform.GetTimeSpan();
+                    UpdateTimeLabel();
+                    timer.Start();
+                }
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -89,37 +93,7 @@ namespace test
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void LabelSeparation3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelSeconde_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelHeures_Click(object sender, EventArgs e)
         {
 
         }

@@ -47,9 +47,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.ForeColor = System.Drawing.Color.Tomato;
             this.label1.Location = new System.Drawing.Point(127, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(392, 42);
@@ -60,7 +61,7 @@
             // 
             this.Btn__Time.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn__Time.ForeColor = System.Drawing.Color.DimGray;
-            this.Btn__Time.Location = new System.Drawing.Point(234, 207);
+            this.Btn__Time.Location = new System.Drawing.Point(234, 213);
             this.Btn__Time.Name = "Btn__Time";
             this.Btn__Time.Size = new System.Drawing.Size(114, 43);
             this.Btn__Time.TabIndex = 1;
@@ -99,7 +100,7 @@
             // Heure
             // 
             this.Heure.AutoSize = true;
-            this.Heure.Location = new System.Drawing.Point(62, 130);
+            this.Heure.Location = new System.Drawing.Point(39, 130);
             this.Heure.Name = "Heure";
             this.Heure.Size = new System.Drawing.Size(44, 16);
             this.Heure.TabIndex = 6;
@@ -108,7 +109,7 @@
             // Minute
             // 
             this.Minute.AutoSize = true;
-            this.Minute.Location = new System.Drawing.Point(194, 130);
+            this.Minute.Location = new System.Drawing.Point(165, 130);
             this.Minute.Name = "Minute";
             this.Minute.Size = new System.Drawing.Size(53, 16);
             this.Minute.TabIndex = 7;
@@ -117,7 +118,7 @@
             // Seconde
             // 
             this.Seconde.AutoSize = true;
-            this.Seconde.Location = new System.Drawing.Point(327, 130);
+            this.Seconde.Location = new System.Drawing.Point(291, 130);
             this.Seconde.Name = "Seconde";
             this.Seconde.Size = new System.Drawing.Size(69, 16);
             this.Seconde.TabIndex = 8;
@@ -126,7 +127,7 @@
             // Milliseconde
             // 
             this.Milliseconde.AutoSize = true;
-            this.Milliseconde.Location = new System.Drawing.Point(484, 130);
+            this.Milliseconde.Location = new System.Drawing.Point(417, 130);
             this.Milliseconde.Name = "Milliseconde";
             this.Milliseconde.Size = new System.Drawing.Size(90, 16);
             this.Milliseconde.TabIndex = 9;
