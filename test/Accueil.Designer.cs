@@ -149,7 +149,6 @@
             this.label1.Size = new System.Drawing.Size(323, 48);
             this.label1.TabIndex = 4;
             this.label1.Text = " Votes Stats Now";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // roundCorneredProgressBar1
             // 
@@ -213,7 +212,7 @@
             this.LabelTime.BackColor = System.Drawing.SystemColors.Control;
             this.LabelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTime.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LabelTime.Location = new System.Drawing.Point(348, 128);
+            this.LabelTime.Location = new System.Drawing.Point(374, 128);
             this.LabelTime.Name = "LabelTime";
             this.LabelTime.Size = new System.Drawing.Size(583, 91);
             this.LabelTime.TabIndex = 20;
@@ -241,8 +240,6 @@
             this.Name = "Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DigitalVote";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.BottomPage.ResumeLayout(false);
             this.BottomPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).EndInit();

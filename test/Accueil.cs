@@ -13,7 +13,7 @@ namespace test
 {
     public partial class Accueil : Form
     {
-      private Timer time;
+        private Timer time;
         private TimeSpan timeEcouler;
 
 
@@ -49,7 +49,7 @@ namespace test
         private void UpdateTimeLabel()
         {
             //Affichage du chrono
-            LabelTime.Text = timeEcouler.ToString(@"hh\:mm\:ss\.ff");
+            LabelTime.Text = timeEcouler.ToString(@"hh\:mm\:ss\:ff");
         }
 
         private void buttonLogAdmin_Click(object sender, EventArgs e)
@@ -68,11 +68,6 @@ namespace test
             //
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonPlayTime_Click(object sender, EventArgs e)
         {
             //Ouvrir la fenetre Timer
@@ -85,17 +80,6 @@ namespace test
                     timer.Start();
                 }
             }
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
     }   
 }
