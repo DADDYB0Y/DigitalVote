@@ -84,9 +84,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(0, -2);
+            this.panel1.Location = new System.Drawing.Point(0, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 455);
+            this.panel1.Size = new System.Drawing.Size(326, 456);
             this.panel1.TabIndex = 6;
             // 
             // label1
@@ -102,7 +102,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(575, 147);
+            this.label3.Location = new System.Drawing.Point(631, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 8;
