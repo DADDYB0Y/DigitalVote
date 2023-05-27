@@ -22,3 +22,4 @@ E:\Project\c#\LearnA\test\test\obj\Debug\test.Timer.resources
 E:\Project\c#\LearnA\test\test\obj\Debug\test.csproj.CopyComplete
 E:\Project\c#\LearnA\test\test\obj\Debug\test.LoginAdmin.resources
 E:\Project\c#\LearnA\test\test\obj\Debug\test.LoginVote.resources
+E:\Project\c#\LearnA\test\test\obj\Debug\test.Admin.resources

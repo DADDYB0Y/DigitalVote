@@ -16,5 +16,18 @@ namespace test
         {
             InitializeComponent();
         }
+
+        private void textBox__NomComplet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn__ValidAdmin_Click(object sender, EventArgs e)
+        {
+            //Ouvrir la fenetre Login Admin
+            Admin adminform = new Admin();
+            adminform.Show();
+            //
+        }
     }
 }

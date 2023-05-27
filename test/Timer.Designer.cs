@@ -51,7 +51,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Location = new System.Drawing.Point(127, 57);
+            this.label1.Location = new System.Drawing.Point(115, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(392, 42);
             this.label1.TabIndex = 0;
@@ -71,6 +71,7 @@
             // 
             // numericUpDownHeure
             // 
+            this.numericUpDownHeure.ForeColor = System.Drawing.SystemColors.GrayText;
             this.numericUpDownHeure.Location = new System.Drawing.Point(42, 156);
             this.numericUpDownHeure.Name = "numericUpDownHeure";
             this.numericUpDownHeure.Size = new System.Drawing.Size(120, 22);
@@ -78,6 +79,7 @@
             // 
             // numericUpDownMinute
             // 
+            this.numericUpDownMinute.ForeColor = System.Drawing.SystemColors.GrayText;
             this.numericUpDownMinute.Location = new System.Drawing.Point(168, 155);
             this.numericUpDownMinute.Name = "numericUpDownMinute";
             this.numericUpDownMinute.Size = new System.Drawing.Size(120, 22);
@@ -85,6 +87,7 @@
             // 
             // numericUpDownSeconde
             // 
+            this.numericUpDownSeconde.ForeColor = System.Drawing.SystemColors.GrayText;
             this.numericUpDownSeconde.Location = new System.Drawing.Point(294, 156);
             this.numericUpDownSeconde.Name = "numericUpDownSeconde";
             this.numericUpDownSeconde.Size = new System.Drawing.Size(120, 22);
@@ -92,6 +95,7 @@
             // 
             // numericUpDownMilliseconde
             // 
+            this.numericUpDownMilliseconde.ForeColor = System.Drawing.SystemColors.GrayText;
             this.numericUpDownMilliseconde.Location = new System.Drawing.Point(420, 156);
             this.numericUpDownMilliseconde.Name = "numericUpDownMilliseconde";
             this.numericUpDownMilliseconde.Size = new System.Drawing.Size(120, 22);
@@ -100,6 +104,7 @@
             // Heure
             // 
             this.Heure.AutoSize = true;
+            this.Heure.ForeColor = System.Drawing.SystemColors.GrayText;
             this.Heure.Location = new System.Drawing.Point(39, 130);
             this.Heure.Name = "Heure";
             this.Heure.Size = new System.Drawing.Size(44, 16);
@@ -109,6 +114,7 @@
             // Minute
             // 
             this.Minute.AutoSize = true;
+            this.Minute.ForeColor = System.Drawing.SystemColors.GrayText;
             this.Minute.Location = new System.Drawing.Point(165, 130);
             this.Minute.Name = "Minute";
             this.Minute.Size = new System.Drawing.Size(53, 16);
@@ -118,6 +124,7 @@
             // Seconde
             // 
             this.Seconde.AutoSize = true;
+            this.Seconde.ForeColor = System.Drawing.SystemColors.GrayText;
             this.Seconde.Location = new System.Drawing.Point(291, 130);
             this.Seconde.Name = "Seconde";
             this.Seconde.Size = new System.Drawing.Size(69, 16);
@@ -127,6 +134,7 @@
             // Milliseconde
             // 
             this.Milliseconde.AutoSize = true;
+            this.Milliseconde.ForeColor = System.Drawing.SystemColors.GrayText;
             this.Milliseconde.Location = new System.Drawing.Point(417, 130);
             this.Milliseconde.Name = "Milliseconde";
             this.Milliseconde.Size = new System.Drawing.Size(90, 16);
