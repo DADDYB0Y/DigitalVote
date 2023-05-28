@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Timer));
             this.label1 = new System.Windows.Forms.Label();
             this.Btn__Time = new System.Windows.Forms.Button();
             this.numericUpDownHeure = new System.Windows.Forms.NumericUpDown();
@@ -59,7 +60,9 @@
             // 
             // Btn__Time
             // 
-            this.Btn__Time.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn__Time.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.Btn__Time.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.Btn__Time.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn__Time.ForeColor = System.Drawing.Color.DimGray;
             this.Btn__Time.Location = new System.Drawing.Point(234, 213);
             this.Btn__Time.Name = "Btn__Time";
@@ -156,6 +159,7 @@
             this.Controls.Add(this.numericUpDownHeure);
             this.Controls.Add(this.Btn__Time);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Timer";
             this.Text = "Durée de Vote";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeure)).EndInit();

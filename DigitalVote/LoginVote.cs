@@ -16,5 +16,15 @@ namespace test
         {
             InitializeComponent();
         }
+
+        private void btn__ValidVote_MouseEnter(object sender, EventArgs e)
+        {
+            btn__ValidVote.ForeColor = Color.White;
+        }
+
+        private void btn__ValidVote_MouseLeave(object sender, EventArgs e)
+        {
+            btn__ValidVote.ForeColor = Color.Black;
+        }
     }
 }

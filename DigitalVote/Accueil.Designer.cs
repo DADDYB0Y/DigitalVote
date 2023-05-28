@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.buttonLogAdmin = new System.Windows.Forms.Button();
             this.btn__Vote = new System.Windows.Forms.Button();
             this.buttonPlayTime = new System.Windows.Forms.Button();
@@ -36,17 +37,17 @@
             this.title__2 = new System.Windows.Forms.Label();
             this.title__1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundCorneredProgressBar1 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
-            this.roundCorneredProgressBar2 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
-            this.roundCorneredProgressBar3 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
-            this.roundCorneredProgressBar4 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
             this.LabelTime = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.roundCorneredProgressBar4 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
+            this.roundCorneredProgressBar3 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
+            this.roundCorneredProgressBar2 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
+            this.roundCorneredProgressBar1 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
             this.BottomPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonLogAdmin
@@ -55,7 +56,8 @@
             this.buttonLogAdmin.AutoEllipsis = true;
             this.buttonLogAdmin.BackColor = System.Drawing.SystemColors.Control;
             this.buttonLogAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonLogAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.buttonLogAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogAdmin.ForeColor = System.Drawing.Color.DimGray;
             this.buttonLogAdmin.Location = new System.Drawing.Point(984, 14);
             this.buttonLogAdmin.Margin = new System.Windows.Forms.Padding(4);
@@ -65,13 +67,16 @@
             this.buttonLogAdmin.Text = "Admin";
             this.buttonLogAdmin.UseVisualStyleBackColor = false;
             this.buttonLogAdmin.Click += new System.EventHandler(this.buttonLogAdmin_Click);
+            this.buttonLogAdmin.MouseEnter += new System.EventHandler(this.buttonLogAdmin_MouseEnter);
+            this.buttonLogAdmin.MouseLeave += new System.EventHandler(this.buttonLogAdmin_MouseLeave);
             // 
             // btn__Vote
             // 
             this.btn__Vote.AutoEllipsis = true;
             this.btn__Vote.BackColor = System.Drawing.SystemColors.Control;
             this.btn__Vote.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn__Vote.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn__Vote.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.btn__Vote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn__Vote.ForeColor = System.Drawing.Color.DimGray;
             this.btn__Vote.Location = new System.Drawing.Point(1101, 14);
             this.btn__Vote.Margin = new System.Windows.Forms.Padding(4);
@@ -81,13 +86,17 @@
             this.btn__Vote.Text = "Voter";
             this.btn__Vote.UseVisualStyleBackColor = false;
             this.btn__Vote.Click += new System.EventHandler(this.btn__Vote_Click);
+            this.btn__Vote.MouseEnter += new System.EventHandler(this.btn__Vote_MouseEnter);
+            this.btn__Vote.MouseLeave += new System.EventHandler(this.btn__Vote_MouseLeave);
             // 
             // buttonPlayTime
             // 
             this.buttonPlayTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonPlayTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonPlayTime.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonPlayTime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.buttonPlayTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlayTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlayTime.ForeColor = System.Drawing.Color.DimGray;
+            this.buttonPlayTime.ForeColor = System.Drawing.Color.Gray;
             this.buttonPlayTime.Location = new System.Drawing.Point(539, 238);
             this.buttonPlayTime.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPlayTime.Name = "buttonPlayTime";
@@ -96,6 +105,8 @@
             this.buttonPlayTime.Text = "Play Time";
             this.buttonPlayTime.UseVisualStyleBackColor = true;
             this.buttonPlayTime.Click += new System.EventHandler(this.buttonPlayTime_Click);
+            this.buttonPlayTime.MouseEnter += new System.EventHandler(this.buttonPlayTime_MouseEnter);
+            this.buttonPlayTime.MouseLeave += new System.EventHandler(this.buttonPlayTime_MouseLeave);
             // 
             // BottomPage
             // 
@@ -116,6 +127,7 @@
             // 
             this.title__2.AutoSize = true;
             this.title__2.BackColor = System.Drawing.Color.Transparent;
+            this.title__2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.title__2.Font = new System.Drawing.Font("Microsoft YaHei Light", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title__2.ForeColor = System.Drawing.Color.Gainsboro;
             this.title__2.Location = new System.Drawing.Point(158, 4);
@@ -150,47 +162,22 @@
             this.label1.TabIndex = 4;
             this.label1.Text = " Votes Stats Now";
             // 
-            // roundCorneredProgressBar1
+            // LabelTime
             // 
-            this.roundCorneredProgressBar1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.roundCorneredProgressBar1.Location = new System.Drawing.Point(121, 377);
-            this.roundCorneredProgressBar1.Name = "roundCorneredProgressBar1";
-            this.roundCorneredProgressBar1.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundCorneredProgressBar1.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.roundCorneredProgressBar1.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.roundCorneredProgressBar1.ProgressFontColor = System.Drawing.Color.Black;
-            this.roundCorneredProgressBar1.Size = new System.Drawing.Size(186, 174);
-            this.roundCorneredProgressBar1.TabIndex = 16;
-            this.roundCorneredProgressBar1.TabStop = false;
-            this.roundCorneredProgressBar1.Value = 0;
+            this.LabelTime.AutoSize = true;
+            this.LabelTime.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LabelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTime.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LabelTime.Location = new System.Drawing.Point(358, 128);
+            this.LabelTime.Name = "LabelTime";
+            this.LabelTime.Size = new System.Drawing.Size(583, 91);
+            this.LabelTime.TabIndex = 20;
+            this.LabelTime.Text = "00 : 00 : 00 : 00";
             // 
-            // roundCorneredProgressBar2
+            // timer
             // 
-            this.roundCorneredProgressBar2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.roundCorneredProgressBar2.Location = new System.Drawing.Point(390, 377);
-            this.roundCorneredProgressBar2.Name = "roundCorneredProgressBar2";
-            this.roundCorneredProgressBar2.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundCorneredProgressBar2.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.roundCorneredProgressBar2.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.roundCorneredProgressBar2.ProgressFontColor = System.Drawing.Color.Black;
-            this.roundCorneredProgressBar2.Size = new System.Drawing.Size(186, 174);
-            this.roundCorneredProgressBar2.TabIndex = 17;
-            this.roundCorneredProgressBar2.TabStop = false;
-            this.roundCorneredProgressBar2.Value = 0;
-            // 
-            // roundCorneredProgressBar3
-            // 
-            this.roundCorneredProgressBar3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.roundCorneredProgressBar3.Location = new System.Drawing.Point(646, 377);
-            this.roundCorneredProgressBar3.Name = "roundCorneredProgressBar3";
-            this.roundCorneredProgressBar3.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundCorneredProgressBar3.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.roundCorneredProgressBar3.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.roundCorneredProgressBar3.ProgressFontColor = System.Drawing.Color.Black;
-            this.roundCorneredProgressBar3.Size = new System.Drawing.Size(186, 174);
-            this.roundCorneredProgressBar3.TabIndex = 18;
-            this.roundCorneredProgressBar3.TabStop = false;
-            this.roundCorneredProgressBar3.Value = 0;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // roundCorneredProgressBar4
             // 
@@ -206,21 +193,47 @@
             this.roundCorneredProgressBar4.TabStop = false;
             this.roundCorneredProgressBar4.Value = 0;
             // 
-            // LabelTime
+            // roundCorneredProgressBar3
             // 
-            this.LabelTime.AutoSize = true;
-            this.LabelTime.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTime.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LabelTime.Location = new System.Drawing.Point(374, 128);
-            this.LabelTime.Name = "LabelTime";
-            this.LabelTime.Size = new System.Drawing.Size(583, 91);
-            this.LabelTime.TabIndex = 20;
-            this.LabelTime.Text = "00 : 00 : 00 : 00";
+            this.roundCorneredProgressBar3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.roundCorneredProgressBar3.Location = new System.Drawing.Point(646, 377);
+            this.roundCorneredProgressBar3.Name = "roundCorneredProgressBar3";
+            this.roundCorneredProgressBar3.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.roundCorneredProgressBar3.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.roundCorneredProgressBar3.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
+            this.roundCorneredProgressBar3.ProgressFontColor = System.Drawing.Color.Black;
+            this.roundCorneredProgressBar3.Size = new System.Drawing.Size(186, 174);
+            this.roundCorneredProgressBar3.TabIndex = 18;
+            this.roundCorneredProgressBar3.TabStop = false;
+            this.roundCorneredProgressBar3.Value = 0;
             // 
-            // timer
+            // roundCorneredProgressBar2
             // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            this.roundCorneredProgressBar2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.roundCorneredProgressBar2.Location = new System.Drawing.Point(390, 377);
+            this.roundCorneredProgressBar2.Name = "roundCorneredProgressBar2";
+            this.roundCorneredProgressBar2.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.roundCorneredProgressBar2.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.roundCorneredProgressBar2.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
+            this.roundCorneredProgressBar2.ProgressFontColor = System.Drawing.Color.Black;
+            this.roundCorneredProgressBar2.Size = new System.Drawing.Size(186, 174);
+            this.roundCorneredProgressBar2.TabIndex = 17;
+            this.roundCorneredProgressBar2.TabStop = false;
+            this.roundCorneredProgressBar2.Value = 0;
+            // 
+            // roundCorneredProgressBar1
+            // 
+            this.roundCorneredProgressBar1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.roundCorneredProgressBar1.Location = new System.Drawing.Point(121, 377);
+            this.roundCorneredProgressBar1.Name = "roundCorneredProgressBar1";
+            this.roundCorneredProgressBar1.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.roundCorneredProgressBar1.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.roundCorneredProgressBar1.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
+            this.roundCorneredProgressBar1.ProgressFontColor = System.Drawing.Color.Black;
+            this.roundCorneredProgressBar1.Size = new System.Drawing.Size(186, 174);
+            this.roundCorneredProgressBar1.TabIndex = 16;
+            this.roundCorneredProgressBar1.TabStop = false;
+            this.roundCorneredProgressBar1.Value = 0;
             // 
             // Accueil
             // 
@@ -236,16 +249,17 @@
             this.Controls.Add(this.BottomPage);
             this.Controls.Add(this.buttonPlayTime);
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DigitalVote";
             this.BottomPage.ResumeLayout(false);
             this.BottomPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

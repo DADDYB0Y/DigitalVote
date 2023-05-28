@@ -81,5 +81,37 @@ namespace test
                 }
             }
         }
+
+        //couleur des bouttons
+        private void buttonPlayTime_MouseEnter(object sender, EventArgs e)
+        {
+            buttonPlayTime.ForeColor = Color.White;
+        }
+
+        private void buttonPlayTime_MouseLeave(object sender, EventArgs e)
+        {
+            buttonPlayTime.ForeColor = Color.Gray;
+        }
+
+        private void buttonLogAdmin_MouseEnter(object sender, EventArgs e)
+        {
+            buttonLogAdmin.ForeColor = Color.White;
+        }
+
+        private void buttonLogAdmin_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLogAdmin.ForeColor = Color.Gray;
+        }
+
+        private void btn__Vote_MouseEnter(object sender, EventArgs e)
+        {
+            btn__Vote.ForeColor = Color.White;
+        }
+
+        private void btn__Vote_MouseLeave(object sender, EventArgs e)
+        {
+            btn__Vote.ForeColor = Color.Gray;
+        }
+
     }   
 }
