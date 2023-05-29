@@ -36,6 +36,7 @@
             this.Label__ErrorMDP = new System.Windows.Forms.Label();
             this.Label__ErrorCapture = new System.Windows.Forms.Label();
             this.Panel__Photo = new System.Windows.Forms.Panel();
+            this.pictureBox__cameraAdmin = new System.Windows.Forms.PictureBox();
             this.btn__Capture = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,11 +45,10 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox__cameraAdmin = new System.Windows.Forms.PictureBox();
             this.Panel__Photo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraAdmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraAdmin)).BeginInit();
             this.SuspendLayout();
             // 
             // btn__ValidAdmin
@@ -129,6 +129,17 @@
             this.Panel__Photo.Size = new System.Drawing.Size(145, 146);
             this.Panel__Photo.TabIndex = 12;
             // 
+            // pictureBox__cameraAdmin
+            // 
+            this.pictureBox__cameraAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox__cameraAdmin.Image")));
+            this.pictureBox__cameraAdmin.Location = new System.Drawing.Point(48, 27);
+            this.pictureBox__cameraAdmin.Name = "pictureBox__cameraAdmin";
+            this.pictureBox__cameraAdmin.Size = new System.Drawing.Size(50, 49);
+            this.pictureBox__cameraAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox__cameraAdmin.TabIndex = 1;
+            this.pictureBox__cameraAdmin.TabStop = false;
+            this.pictureBox__cameraAdmin.Click += new System.EventHandler(this.pictureBox__cameraAdmin_Click);
+            // 
             // btn__Capture
             // 
             this.btn__Capture.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
@@ -150,7 +161,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(609, 112);
+            this.label1.Location = new System.Drawing.Point(614, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 25);
             this.label1.TabIndex = 7;
@@ -233,34 +244,23 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::test.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(372, 292);
+            this.pictureBox3.Image = global::DigitalVote.Properties.Resources._lock;
+            this.pictureBox3.Location = new System.Drawing.Point(374, 292);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 23);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 18);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::test.Properties.Resources.user;
+            this.pictureBox2.Image = global::DigitalVote.Properties.Resources.user;
             this.pictureBox2.Location = new System.Drawing.Point(372, 239);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox__cameraAdmin
-            // 
-            this.pictureBox__cameraAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox__cameraAdmin.Image")));
-            this.pictureBox__cameraAdmin.Location = new System.Drawing.Point(48, 27);
-            this.pictureBox__cameraAdmin.Name = "pictureBox__cameraAdmin";
-            this.pictureBox__cameraAdmin.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox__cameraAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox__cameraAdmin.TabIndex = 1;
-            this.pictureBox__cameraAdmin.TabStop = false;
-            this.pictureBox__cameraAdmin.Click += new System.EventHandler(this.pictureBox__cameraAdmin_Click);
             // 
             // LoginAdmin
             // 
@@ -288,9 +288,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminConnect";
             this.Panel__Photo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraAdmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraAdmin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
