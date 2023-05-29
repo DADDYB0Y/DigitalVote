@@ -33,6 +33,7 @@
             this.btn__ValidVote = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Panel__Photo = new System.Windows.Forms.Panel();
+            this.pictureBox__cameraVote = new System.Windows.Forms.PictureBox();
             this.btn__Capture = new System.Windows.Forms.Button();
             this.Label__ErrorMDP = new System.Windows.Forms.Label();
             this.Label__ErrorCapture = new System.Windows.Forms.Label();
@@ -44,12 +45,11 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox__cameraVote = new System.Windows.Forms.PictureBox();
             this.Panel__Photo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraVote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraVote)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -97,6 +97,16 @@
             this.Panel__Photo.Name = "Panel__Photo";
             this.Panel__Photo.Size = new System.Drawing.Size(145, 146);
             this.Panel__Photo.TabIndex = 18;
+            // 
+            // pictureBox__cameraVote
+            // 
+            this.pictureBox__cameraVote.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox__cameraVote.Image")));
+            this.pictureBox__cameraVote.Location = new System.Drawing.Point(48, 25);
+            this.pictureBox__cameraVote.Name = "pictureBox__cameraVote";
+            this.pictureBox__cameraVote.Size = new System.Drawing.Size(50, 49);
+            this.pictureBox__cameraVote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox__cameraVote.TabIndex = 23;
+            this.pictureBox__cameraVote.TabStop = false;
             // 
             // btn__Capture
             // 
@@ -220,43 +230,33 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::test.Properties.Resources.vote__3_;
+            this.pictureBox4.Image = global::DigitalVote.Properties.Resources.vote__3_;
             this.pictureBox4.Location = new System.Drawing.Point(588, 64);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(109, 110);
+            this.pictureBox4.Size = new System.Drawing.Size(112, 110);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 27;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::test.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(357, 297);
+            this.pictureBox3.Image = global::DigitalVote.Properties.Resources._lock;
+            this.pictureBox3.Location = new System.Drawing.Point(359, 298);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 23);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 18);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::test.Properties.Resources.user;
+            this.pictureBox2.Image = global::DigitalVote.Properties.Resources.user;
             this.pictureBox2.Location = new System.Drawing.Point(357, 242);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox__cameraVote
-            // 
-            this.pictureBox__cameraVote.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox__cameraVote.Image")));
-            this.pictureBox__cameraVote.Location = new System.Drawing.Point(48, 25);
-            this.pictureBox__cameraVote.Name = "pictureBox__cameraVote";
-            this.pictureBox__cameraVote.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox__cameraVote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox__cameraVote.TabIndex = 23;
-            this.pictureBox__cameraVote.TabStop = false;
             // 
             // LoginVote
             // 
@@ -284,10 +284,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Voter";
             this.Panel__Photo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraVote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox__cameraVote)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
