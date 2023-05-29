@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Timer));
-            this.label1 = new System.Windows.Forms.Label();
             this.Btn__Time = new System.Windows.Forms.Button();
             this.numericUpDownHeure = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownMinute = new System.Windows.Forms.NumericUpDown();
@@ -45,37 +44,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMilliseconde)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Location = new System.Drawing.Point(115, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(392, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Entrer la duré du Vote ";
-            // 
             // Btn__Time
             // 
             this.Btn__Time.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.Btn__Time.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.Btn__Time.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Btn__Time.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn__Time.ForeColor = System.Drawing.Color.DimGray;
-            this.Btn__Time.Location = new System.Drawing.Point(234, 213);
+            this.Btn__Time.Location = new System.Drawing.Point(235, 121);
             this.Btn__Time.Name = "Btn__Time";
             this.Btn__Time.Size = new System.Drawing.Size(114, 43);
             this.Btn__Time.TabIndex = 1;
             this.Btn__Time.Text = "Valider";
             this.Btn__Time.UseVisualStyleBackColor = true;
             this.Btn__Time.Click += new System.EventHandler(this.Btn__Time_Click);
+            this.Btn__Time.MouseEnter += new System.EventHandler(this.Btn__Time_MouseEnter);
+            this.Btn__Time.MouseLeave += new System.EventHandler(this.Btn__Time_MouseLeave);
             // 
             // numericUpDownHeure
             // 
             this.numericUpDownHeure.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.numericUpDownHeure.Location = new System.Drawing.Point(42, 156);
+            this.numericUpDownHeure.Location = new System.Drawing.Point(43, 64);
             this.numericUpDownHeure.Name = "numericUpDownHeure";
             this.numericUpDownHeure.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownHeure.TabIndex = 2;
@@ -83,7 +71,7 @@
             // numericUpDownMinute
             // 
             this.numericUpDownMinute.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.numericUpDownMinute.Location = new System.Drawing.Point(168, 155);
+            this.numericUpDownMinute.Location = new System.Drawing.Point(169, 63);
             this.numericUpDownMinute.Name = "numericUpDownMinute";
             this.numericUpDownMinute.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownMinute.TabIndex = 3;
@@ -91,7 +79,7 @@
             // numericUpDownSeconde
             // 
             this.numericUpDownSeconde.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.numericUpDownSeconde.Location = new System.Drawing.Point(294, 156);
+            this.numericUpDownSeconde.Location = new System.Drawing.Point(295, 64);
             this.numericUpDownSeconde.Name = "numericUpDownSeconde";
             this.numericUpDownSeconde.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownSeconde.TabIndex = 4;
@@ -99,7 +87,7 @@
             // numericUpDownMilliseconde
             // 
             this.numericUpDownMilliseconde.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.numericUpDownMilliseconde.Location = new System.Drawing.Point(420, 156);
+            this.numericUpDownMilliseconde.Location = new System.Drawing.Point(421, 64);
             this.numericUpDownMilliseconde.Name = "numericUpDownMilliseconde";
             this.numericUpDownMilliseconde.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownMilliseconde.TabIndex = 5;
@@ -108,7 +96,7 @@
             // 
             this.Heure.AutoSize = true;
             this.Heure.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.Heure.Location = new System.Drawing.Point(39, 130);
+            this.Heure.Location = new System.Drawing.Point(40, 38);
             this.Heure.Name = "Heure";
             this.Heure.Size = new System.Drawing.Size(44, 16);
             this.Heure.TabIndex = 6;
@@ -118,7 +106,7 @@
             // 
             this.Minute.AutoSize = true;
             this.Minute.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.Minute.Location = new System.Drawing.Point(165, 130);
+            this.Minute.Location = new System.Drawing.Point(166, 38);
             this.Minute.Name = "Minute";
             this.Minute.Size = new System.Drawing.Size(53, 16);
             this.Minute.TabIndex = 7;
@@ -128,7 +116,7 @@
             // 
             this.Seconde.AutoSize = true;
             this.Seconde.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.Seconde.Location = new System.Drawing.Point(291, 130);
+            this.Seconde.Location = new System.Drawing.Point(292, 38);
             this.Seconde.Name = "Seconde";
             this.Seconde.Size = new System.Drawing.Size(69, 16);
             this.Seconde.TabIndex = 8;
@@ -138,7 +126,7 @@
             // 
             this.Milliseconde.AutoSize = true;
             this.Milliseconde.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.Milliseconde.Location = new System.Drawing.Point(417, 130);
+            this.Milliseconde.Location = new System.Drawing.Point(418, 38);
             this.Milliseconde.Name = "Milliseconde";
             this.Milliseconde.Size = new System.Drawing.Size(90, 16);
             this.Milliseconde.TabIndex = 9;
@@ -148,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 344);
+            this.ClientSize = new System.Drawing.Size(573, 195);
             this.Controls.Add(this.Milliseconde);
             this.Controls.Add(this.Seconde);
             this.Controls.Add(this.Minute);
@@ -158,8 +146,9 @@
             this.Controls.Add(this.numericUpDownMinute);
             this.Controls.Add(this.numericUpDownHeure);
             this.Controls.Add(this.Btn__Time);
-            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(591, 242);
             this.Name = "Timer";
             this.Text = "Durée de Vote";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeure)).EndInit();
@@ -172,8 +161,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Btn__Time;
         private System.Windows.Forms.NumericUpDown numericUpDownHeure;
         private System.Windows.Forms.NumericUpDown numericUpDownMinute;

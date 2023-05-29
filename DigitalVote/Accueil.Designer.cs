@@ -30,70 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
-            this.buttonLogAdmin = new System.Windows.Forms.Button();
-            this.btn__Vote = new System.Windows.Forms.Button();
             this.buttonPlayTime = new System.Windows.Forms.Button();
-            this.BottomPage = new System.Windows.Forms.Panel();
-            this.title__2 = new System.Windows.Forms.Label();
-            this.title__1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LabelTime = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.roundCorneredProgressBar4 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
-            this.roundCorneredProgressBar3 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
-            this.roundCorneredProgressBar2 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
-            this.roundCorneredProgressBar1 = new RoundCorneredProgressBar.RoundCorneredProgressBar();
+            this.buttonLogAdmin = new System.Windows.Forms.Button();
+            this.btn__Vote = new System.Windows.Forms.Button();
+            this.title__1 = new System.Windows.Forms.Label();
+            this.BottomPage = new System.Windows.Forms.Panel();
+            this.title__2 = new System.Windows.Forms.Label();
+            this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.guna2CircleProgressBar2 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.guna2CircleProgressBar3 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.guna2CircleProgressBar4 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.BottomPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonLogAdmin
-            // 
-            this.buttonLogAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLogAdmin.AutoEllipsis = true;
-            this.buttonLogAdmin.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonLogAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
-            this.buttonLogAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogAdmin.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonLogAdmin.Location = new System.Drawing.Point(984, 14);
-            this.buttonLogAdmin.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonLogAdmin.Name = "buttonLogAdmin";
-            this.buttonLogAdmin.Size = new System.Drawing.Size(87, 38);
-            this.buttonLogAdmin.TabIndex = 0;
-            this.buttonLogAdmin.Text = "Admin";
-            this.buttonLogAdmin.UseVisualStyleBackColor = false;
-            this.buttonLogAdmin.Click += new System.EventHandler(this.buttonLogAdmin_Click);
-            this.buttonLogAdmin.MouseEnter += new System.EventHandler(this.buttonLogAdmin_MouseEnter);
-            this.buttonLogAdmin.MouseLeave += new System.EventHandler(this.buttonLogAdmin_MouseLeave);
-            // 
-            // btn__Vote
-            // 
-            this.btn__Vote.AutoEllipsis = true;
-            this.btn__Vote.BackColor = System.Drawing.SystemColors.Control;
-            this.btn__Vote.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn__Vote.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
-            this.btn__Vote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn__Vote.ForeColor = System.Drawing.Color.DimGray;
-            this.btn__Vote.Location = new System.Drawing.Point(1101, 14);
-            this.btn__Vote.Margin = new System.Windows.Forms.Padding(4);
-            this.btn__Vote.Name = "btn__Vote";
-            this.btn__Vote.Size = new System.Drawing.Size(77, 39);
-            this.btn__Vote.TabIndex = 1;
-            this.btn__Vote.Text = "Voter";
-            this.btn__Vote.UseVisualStyleBackColor = false;
-            this.btn__Vote.Click += new System.EventHandler(this.btn__Vote_Click);
-            this.btn__Vote.MouseEnter += new System.EventHandler(this.btn__Vote_MouseEnter);
-            this.btn__Vote.MouseLeave += new System.EventHandler(this.btn__Vote_MouseLeave);
             // 
             // buttonPlayTime
             // 
             this.buttonPlayTime.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPlayTime.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonPlayTime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.buttonPlayTime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.buttonPlayTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlayTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlayTime.ForeColor = System.Drawing.Color.Gray;
@@ -108,53 +65,15 @@
             this.buttonPlayTime.MouseEnter += new System.EventHandler(this.buttonPlayTime_MouseEnter);
             this.buttonPlayTime.MouseLeave += new System.EventHandler(this.buttonPlayTime_MouseLeave);
             // 
-            // BottomPage
-            // 
-            this.BottomPage.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
-            this.BottomPage.AutoScroll = true;
-            this.BottomPage.BackColor = System.Drawing.SystemColors.GrayText;
-            this.BottomPage.Controls.Add(this.title__2);
-            this.BottomPage.Controls.Add(this.title__1);
-            this.BottomPage.Controls.Add(this.btn__Vote);
-            this.BottomPage.Controls.Add(this.buttonLogAdmin);
-            this.BottomPage.Location = new System.Drawing.Point(-3, 0);
-            this.BottomPage.Margin = new System.Windows.Forms.Padding(4);
-            this.BottomPage.Name = "BottomPage";
-            this.BottomPage.Size = new System.Drawing.Size(1265, 68);
-            this.BottomPage.TabIndex = 3;
-            // 
-            // title__2
-            // 
-            this.title__2.AutoSize = true;
-            this.title__2.BackColor = System.Drawing.Color.Transparent;
-            this.title__2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.title__2.Font = new System.Drawing.Font("Microsoft YaHei Light", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title__2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.title__2.Location = new System.Drawing.Point(158, 4);
-            this.title__2.Name = "title__2";
-            this.title__2.Size = new System.Drawing.Size(116, 57);
-            this.title__2.TabIndex = 5;
-            this.title__2.Text = "Vote";
-            // 
-            // title__1
-            // 
-            this.title__1.AutoSize = true;
-            this.title__1.BackColor = System.Drawing.Color.Transparent;
-            this.title__1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title__1.ForeColor = System.Drawing.Color.Tomato;
-            this.title__1.Location = new System.Drawing.Point(9, 8);
-            this.title__1.Name = "title__1";
-            this.title__1.Size = new System.Drawing.Size(157, 52);
-            this.title__1.TabIndex = 5;
-            this.title__1.Text = "Digital";
-            this.title__1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Tomato;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(471, 295);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -164,6 +83,9 @@
             // 
             // LabelTime
             // 
+            this.LabelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelTime.AutoSize = true;
             this.LabelTime.BackColor = System.Drawing.SystemColors.Control;
             this.LabelTime.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -179,72 +101,156 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // roundCorneredProgressBar4
+            // buttonLogAdmin
             // 
-            this.roundCorneredProgressBar4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.roundCorneredProgressBar4.Location = new System.Drawing.Point(920, 377);
-            this.roundCorneredProgressBar4.Name = "roundCorneredProgressBar4";
-            this.roundCorneredProgressBar4.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundCorneredProgressBar4.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.roundCorneredProgressBar4.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.roundCorneredProgressBar4.ProgressFontColor = System.Drawing.Color.Black;
-            this.roundCorneredProgressBar4.Size = new System.Drawing.Size(186, 174);
-            this.roundCorneredProgressBar4.TabIndex = 19;
-            this.roundCorneredProgressBar4.TabStop = false;
-            this.roundCorneredProgressBar4.Value = 0;
+            this.buttonLogAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLogAdmin.AutoEllipsis = true;
+            this.buttonLogAdmin.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonLogAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLogAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.buttonLogAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogAdmin.ForeColor = System.Drawing.Color.DimGray;
+            this.buttonLogAdmin.Location = new System.Drawing.Point(993, 14);
+            this.buttonLogAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLogAdmin.Name = "buttonLogAdmin";
+            this.buttonLogAdmin.Size = new System.Drawing.Size(87, 39);
+            this.buttonLogAdmin.TabIndex = 0;
+            this.buttonLogAdmin.Text = "Admin";
+            this.buttonLogAdmin.UseVisualStyleBackColor = false;
+            this.buttonLogAdmin.Click += new System.EventHandler(this.buttonLogAdmin_Click);
+            this.buttonLogAdmin.MouseEnter += new System.EventHandler(this.buttonLogAdmin_MouseEnter);
+            this.buttonLogAdmin.MouseLeave += new System.EventHandler(this.buttonLogAdmin_MouseLeave);
             // 
-            // roundCorneredProgressBar3
+            // btn__Vote
             // 
-            this.roundCorneredProgressBar3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.roundCorneredProgressBar3.Location = new System.Drawing.Point(646, 377);
-            this.roundCorneredProgressBar3.Name = "roundCorneredProgressBar3";
-            this.roundCorneredProgressBar3.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundCorneredProgressBar3.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.roundCorneredProgressBar3.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.roundCorneredProgressBar3.ProgressFontColor = System.Drawing.Color.Black;
-            this.roundCorneredProgressBar3.Size = new System.Drawing.Size(186, 174);
-            this.roundCorneredProgressBar3.TabIndex = 18;
-            this.roundCorneredProgressBar3.TabStop = false;
-            this.roundCorneredProgressBar3.Value = 0;
+            this.btn__Vote.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn__Vote.AutoEllipsis = true;
+            this.btn__Vote.BackColor = System.Drawing.SystemColors.Control;
+            this.btn__Vote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn__Vote.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn__Vote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn__Vote.ForeColor = System.Drawing.Color.DimGray;
+            this.btn__Vote.Location = new System.Drawing.Point(1101, 14);
+            this.btn__Vote.Margin = new System.Windows.Forms.Padding(4);
+            this.btn__Vote.Name = "btn__Vote";
+            this.btn__Vote.Size = new System.Drawing.Size(77, 39);
+            this.btn__Vote.TabIndex = 1;
+            this.btn__Vote.Text = "Voter";
+            this.btn__Vote.UseVisualStyleBackColor = false;
+            this.btn__Vote.Click += new System.EventHandler(this.btn__Vote_Click);
+            this.btn__Vote.MouseEnter += new System.EventHandler(this.btn__Vote_MouseEnter);
+            this.btn__Vote.MouseLeave += new System.EventHandler(this.btn__Vote_MouseLeave);
             // 
-            // roundCorneredProgressBar2
+            // title__1
             // 
-            this.roundCorneredProgressBar2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.roundCorneredProgressBar2.Location = new System.Drawing.Point(390, 377);
-            this.roundCorneredProgressBar2.Name = "roundCorneredProgressBar2";
-            this.roundCorneredProgressBar2.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundCorneredProgressBar2.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.roundCorneredProgressBar2.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.roundCorneredProgressBar2.ProgressFontColor = System.Drawing.Color.Black;
-            this.roundCorneredProgressBar2.Size = new System.Drawing.Size(186, 174);
-            this.roundCorneredProgressBar2.TabIndex = 17;
-            this.roundCorneredProgressBar2.TabStop = false;
-            this.roundCorneredProgressBar2.Value = 0;
+            this.title__1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.title__1.AutoSize = true;
+            this.title__1.BackColor = System.Drawing.Color.Transparent;
+            this.title__1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title__1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.title__1.Location = new System.Drawing.Point(9, 8);
+            this.title__1.Name = "title__1";
+            this.title__1.Size = new System.Drawing.Size(157, 52);
+            this.title__1.TabIndex = 5;
+            this.title__1.Text = "Digital";
+            this.title__1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // roundCorneredProgressBar1
+            // BottomPage
             // 
-            this.roundCorneredProgressBar1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.roundCorneredProgressBar1.Location = new System.Drawing.Point(121, 377);
-            this.roundCorneredProgressBar1.Name = "roundCorneredProgressBar1";
-            this.roundCorneredProgressBar1.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundCorneredProgressBar1.ProgressBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.roundCorneredProgressBar1.ProgressFont = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.roundCorneredProgressBar1.ProgressFontColor = System.Drawing.Color.Black;
-            this.roundCorneredProgressBar1.Size = new System.Drawing.Size(186, 174);
-            this.roundCorneredProgressBar1.TabIndex = 16;
-            this.roundCorneredProgressBar1.TabStop = false;
-            this.roundCorneredProgressBar1.Value = 0;
+            this.BottomPage.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.BottomPage.AutoScroll = true;
+            this.BottomPage.BackColor = System.Drawing.SystemColors.GrayText;
+            this.BottomPage.Controls.Add(this.title__2);
+            this.BottomPage.Controls.Add(this.title__1);
+            this.BottomPage.Controls.Add(this.buttonLogAdmin);
+            this.BottomPage.Controls.Add(this.btn__Vote);
+            this.BottomPage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BottomPage.Location = new System.Drawing.Point(0, 0);
+            this.BottomPage.Margin = new System.Windows.Forms.Padding(4);
+            this.BottomPage.Name = "BottomPage";
+            this.BottomPage.Size = new System.Drawing.Size(1262, 68);
+            this.BottomPage.TabIndex = 3;
+            // 
+            // title__2
+            // 
+            this.title__2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.title__2.AutoSize = true;
+            this.title__2.BackColor = System.Drawing.Color.Transparent;
+            this.title__2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.title__2.Font = new System.Drawing.Font("Microsoft YaHei Light", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title__2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.title__2.Location = new System.Drawing.Point(152, 4);
+            this.title__2.Name = "title__2";
+            this.title__2.Size = new System.Drawing.Size(116, 57);
+            this.title__2.TabIndex = 5;
+            this.title__2.Text = "Vote";
+            // 
+            // guna2CircleProgressBar1
+            // 
+            this.guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(159, 368);
+            this.guna2CircleProgressBar1.Minimum = 0;
+            this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
+            this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(178, 178);
+            this.guna2CircleProgressBar1.TabIndex = 21;
+            this.guna2CircleProgressBar1.Text = "guna2CircleProgressBar1";
+            // 
+            // guna2CircleProgressBar2
+            // 
+            this.guna2CircleProgressBar2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.guna2CircleProgressBar2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2CircleProgressBar2.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleProgressBar2.Location = new System.Drawing.Point(440, 368);
+            this.guna2CircleProgressBar2.Minimum = 0;
+            this.guna2CircleProgressBar2.Name = "guna2CircleProgressBar2";
+            this.guna2CircleProgressBar2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleProgressBar2.Size = new System.Drawing.Size(178, 178);
+            this.guna2CircleProgressBar2.TabIndex = 22;
+            this.guna2CircleProgressBar2.Text = "guna2CircleProgressBar2";
+            // 
+            // guna2CircleProgressBar3
+            // 
+            this.guna2CircleProgressBar3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.guna2CircleProgressBar3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2CircleProgressBar3.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleProgressBar3.Location = new System.Drawing.Point(702, 368);
+            this.guna2CircleProgressBar3.Minimum = 0;
+            this.guna2CircleProgressBar3.Name = "guna2CircleProgressBar3";
+            this.guna2CircleProgressBar3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleProgressBar3.Size = new System.Drawing.Size(178, 178);
+            this.guna2CircleProgressBar3.TabIndex = 23;
+            this.guna2CircleProgressBar3.Text = "guna2CircleProgressBar3";
+            // 
+            // guna2CircleProgressBar4
+            // 
+            this.guna2CircleProgressBar4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.guna2CircleProgressBar4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2CircleProgressBar4.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleProgressBar4.Location = new System.Drawing.Point(964, 368);
+            this.guna2CircleProgressBar4.Minimum = 0;
+            this.guna2CircleProgressBar4.Name = "guna2CircleProgressBar4";
+            this.guna2CircleProgressBar4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleProgressBar4.Size = new System.Drawing.Size(178, 178);
+            this.guna2CircleProgressBar4.TabIndex = 24;
+            this.guna2CircleProgressBar4.Text = "guna2CircleProgressBar4";
             // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.guna2CircleProgressBar4);
+            this.Controls.Add(this.guna2CircleProgressBar3);
+            this.Controls.Add(this.guna2CircleProgressBar2);
+            this.Controls.Add(this.guna2CircleProgressBar1);
             this.Controls.Add(this.LabelTime);
-            this.Controls.Add(this.roundCorneredProgressBar4);
-            this.Controls.Add(this.roundCorneredProgressBar3);
-            this.Controls.Add(this.roundCorneredProgressBar2);
-            this.Controls.Add(this.roundCorneredProgressBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BottomPage);
             this.Controls.Add(this.buttonPlayTime);
@@ -256,30 +262,25 @@
             this.Text = "DigitalVote";
             this.BottomPage.ResumeLayout(false);
             this.BottomPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundCorneredProgressBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonLogAdmin;
-        private System.Windows.Forms.Button btn__Vote;
         private System.Windows.Forms.Button buttonPlayTime;
-        private System.Windows.Forms.Panel BottomPage;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label title__2;
-        private System.Windows.Forms.Label title__1;
-        private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar1;
-        private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar2;
-        private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar3;
-        private RoundCorneredProgressBar.RoundCorneredProgressBar roundCorneredProgressBar4;
         private System.Windows.Forms.Label LabelTime;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button buttonLogAdmin;
+        private System.Windows.Forms.Button btn__Vote;
+        private System.Windows.Forms.Label title__1;
+        private System.Windows.Forms.Panel BottomPage;
+        private System.Windows.Forms.Label title__2;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar2;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar3;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar4;
     }
 }
 

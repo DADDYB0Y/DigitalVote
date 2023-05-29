@@ -39,5 +39,20 @@ namespace test
         {
 
         }
+
+        private void pictureBox__cameraAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn__Capture_MouseEnter(object sender, EventArgs e)
+        {
+            btn__Capture.ForeColor = Color.White;
+        }
+
+        private void btn__Capture_MouseLeave(object sender, EventArgs e)
+        {
+            btn__Capture.ForeColor = Color.Black;
+        }
     }
 }

@@ -25,3 +25,4 @@ E:\Project\c#\LearnA\DigitalVote\DigitalVote\obj\Debug\test.exe
 E:\Project\c#\LearnA\DigitalVote\DigitalVote\obj\Debug\test.pdb
 E:\Project\c#\LearnA\DigitalVote\DigitalVote\bin\Debug\AForge.dll
 E:\Project\c#\LearnA\DigitalVote\DigitalVote\bin\Debug\AForge.xml
+E:\Project\c#\LearnA\DigitalVote\DigitalVote\bin\Debug\Guna.UI2.dll

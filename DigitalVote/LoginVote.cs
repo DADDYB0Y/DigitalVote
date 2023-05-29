@@ -26,5 +26,20 @@ namespace test
         {
             btn__ValidVote.ForeColor = Color.Black;
         }
+
+        private void btn__ValidVote_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn__Capture_MouseEnter(object sender, EventArgs e)
+        {
+            btn__Capture.ForeColor = Color.White;
+        }
+
+        private void btn__Capture_MouseLeave(object sender, EventArgs e)
+        {
+            btn__Capture.ForeColor = Color.Black;
+        }
     }
 }

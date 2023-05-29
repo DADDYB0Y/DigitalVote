@@ -33,5 +33,15 @@ namespace test
             DialogResult = DialogResult.OK;
             Close();
         }
+
+        private void Btn__Time_MouseEnter(object sender, EventArgs e)
+        {
+            Btn__Time.ForeColor = Color.White;
+        }
+
+        private void Btn__Time_MouseLeave(object sender, EventArgs e)
+        {
+            Btn__Time.ForeColor = Color.Gray;
+        }
     }
 }
